@@ -5,11 +5,15 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "server": "webpack --config webpack.config.js",
-    "start": "node dist/main"
+    "server": "webpack serve --config webpack.config.js",
+    "start": "node index.js"
   },
   "dependencies": {
-    "typescript": "5.3.3"
+    "bufferutil": "^4.0.8",
+    "node-fetch": "^2.6.1",
+    "typescript": "5.3.3",
+    "utf-8-validate": "^6.0.3",
+    "webpack-hot-middleware": "^2.26.1"
   },
   "devDependencies": {
     "run-script-webpack-plugin": "^0.2.0",
@@ -19,6 +23,7 @@
     "webpack": "^5.89.0",
     "webpack-cli": "5.1.4",
     "webpack-dev-server": "^5.0.2",
-    "webpack-node-externals": "^3.0.0"
+    "webpack-node-externals": "^3.0.0",
+    "ws": "^8.13.0"
   }
 }
